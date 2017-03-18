@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <title>Angular Project</title>
+
+    <!-- styling libraries -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <!-- angular elements -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <script src='app.js'></script>
+    <!-- <script src='factories/Factory.js'></script> -->
+    <!-- <script src='controllers/Controller.js'></script> -->
+    <style media="screen">
+
+    </style>
+
+  </head>
+  <body>
+    <div>
+      <h1>Partials will load BELOW</h1>
+      <hr>
+    </div>
+
+    <div ng-view>
+      <!-- Partial pages will load here. -->
+    </div>
+
+    <div><hr>
+      <h1>Partials will load ABOVE</h1>
+      <a href="#/">Partial 1</a>
+      <a href="#/partial2">Partial 2</a>
+    </div>
+  </body>
+</html>
